@@ -3,34 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title style="text-align: center; font-weight: bold; font-size: x-large;">Welcome to My Image Links Demo</title>
+    <title>Working With Images</title>
     <style>
+        /* Add any custom CSS styles here */
+        body {
+            font-family: fantasy, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            grid-gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
         }
-        .gallery img {
-            max-width: 100%;
-            height: auto;
+        .food-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .food-list li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <hi> Welcome to working with images in HTML5</hi>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#menu">Menu</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <!-- Home Section -->
+        <section id="home">
+            <h1 style="text-align: center;">Welcome to Our Website!</h1>
+            <h2 style="background-color: azure; text-decoration-color: aliceblue;">Technology</h2>
+            <p>We're excited to share some amazing content with you.</p>
+            <!-- Linked image related to technology -->
+            <a href="https://thestatetimes.com/2018/02/23/with-technology-we-are-not-alone/" target="_blank">
+                <img src="C:\Users\Winga\Desktop\PLPAcademyProjects\img\technology.JPG" alt="Technology" style="max-width: 100%;">
+            </a>
+        </section>
 
-    <section id="home">
-        <h2>Home</h2>
-        <p></p>
-    </section>
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <h2>Nature Gallery</h2>
+            <div class="gallery">
+                <!-- Linked images related to nature -->
+                <a href="https://iusisnaturhotosdea.blogspot.com/2015/05/image-de-nature.html
+                " target="_blank">
+                    <img src="C:\Users\Winga\Desktop\PLPAcademyProjects\img\nature.jpg" alt="Nature 1" style="max-width: 100%;">
+                </a>
+                <a href="https://www.pixelstalk.net/best-nature-full-hd-images-free-download/" target="_blank">
+                    <img src="C:\Users\Winga\Desktop\PLPAcademyProjects\img\nature2.JPG" alt="Nature 2" style="max-width: 100%;">
+                </a>
+                <a href="https://nature.desktopnexus.com/wallpaper/1728563/" target="_blank">
+                    <img src="C:\Users\Winga\Desktop\PLPAcademyProjects\img\nature3.PNG" alt="Nature 3" style="max-width: 100%;">
+                </a>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu">
+                <h2>Food Menu</h2>
+            <ul class="food-list">
+                <!-- List of food items linked to relevant images -->
+                <li><a href="https://example.com/pizza" target="_blank"><img src="C:\Users\Winga\Desktop\PLPAcademyProjects\img\vegetable.JPG" alt="Pizza" style="max-width: 100%;"></a>
+                    <p style="text-align: center;"> Vegetable</p>
+                </li>
+                <li><a href="https://www.thephoblographer.com/2017/07/26/re-constructed-food/" target="_blank"><img src="C:\Users\Winga\Desktop\PLPAcademyProjects\img\food.JPG" alt="Salad" style="max-width: 100%;"> </a>
+                    <p style="text-align: center;">Potattoes</p>
+                </li>
+                <li><a href="https://images6.fanpop.com/image/photos/33300000/ICE-CREAM-ice-cream-33393415-1366-768.jpg" target="_blank"><img src="C:\Users\Winga\Desktop\PLPAcademyProjects\img\icecream.JPG" alt="Ice Cream" style="max-width: 100%;"></a>
+                    <p style="text-align: center;">Ice Cream</p>
+                </li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
