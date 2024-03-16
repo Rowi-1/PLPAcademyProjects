@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <form action="submit_registration.php" method="post">
+        <fieldset>
+            <legend>Profile</legend>
+            <!-- Profile section for personal information -->
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+            <label for="second_name">Second Name:</label>
+            <input type="text" id="second_name" name="second_name" required>
+            <label for="third_name">Third Name:</label>
+            <input type="text" id="third_name" name="third_name" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact</legend>
+            <!-- Contact section for address and telephone -->
+            <h3>Address</h3>
+            <!-- Address subsection -->
+            <label for="address_box">Box:</label>
+            <input type="text" id="address_box" name="address_box" required>
+            <label for="address_code">Code:</label>
+            <input type="text" id="address_code" name="address_code" required><br><br>
+
+            <h3>Telephone</h3>
+            <!-- Telephone subsection -->
+            <label for="country_code">Country Code:</label>
+            <!-- Dropdown menu for selecting country code -->
+            <select id="country_code" name="country_code" required>
+                <option value="">Select Country Code</option>
+                <optgroup label="East Africa">
+                    <!-- East African country codes -->
+                    <option value="+251">+251 (Ethiopia)</option>
+                    <option value="+254">+254 (Kenya)</option>
+                    <option value="+256">+256 (Uganda)</option>
+                    <!-- Add more East African country codes -->
+                </optgroup>
+                <optgroup label="Central Europe">
+                    <!-- Central European country codes -->
+                    <option value="+43">+43 (Austria)</option>
+                    <option value="+420">+420 (Czech Republic)</option>
+                    <option value="+36">+36 (Hungary)</option>
+                    <!-- Add more Central European country codes -->
+                </optgroup>
+            </select>
+            <label for="telephone">Telephone:</label>
+            <!-- Telephone number input -->
+            <input type="tel" id="telephone" name="telephone" required><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Course</legend>
+            <!-- Course section for course details -->
+            <label for="course">Course:</label>
+            <input type="text" id="course" name="course" required><br><br>
+        </fieldset>
+
+        <!-- Form submission buttons -->
+        <input type="submit" value="Register">
+        <input type="reset" value="Cancel">
+    </form>
+</body>
+</html>
+
