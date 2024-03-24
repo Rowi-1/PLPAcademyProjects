@@ -1,12 +1,14 @@
-list1 = [3, 2, 5, 6, 0, 7, 9]
-sum = 0
-sum1 = 0
+class Person:
+    def __init__(self, name, age, gender):
+        self.name = name
+        self.age = age
+        self.gender = gender
+    
+    def introduce(self):
+        print(f"Hello, my name is {self.name}. I am {self.age} years old and my gender is {self.gender}.")
 
-for elem in list1:
-    if elem % 2 == 0:
-        sum = sum + elem
-        continue
-    if elem % 3 == 0:
-        sum1 = sum1 + elem
+# Creating an instance of the Person class
+person1 = Person("Alice", 30, "female")
 
-print(sum, end=" ")
+# Calling the introduce method to display the person's information
+person1.introduce()
