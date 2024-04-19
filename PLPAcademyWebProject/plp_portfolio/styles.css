@@ -1,0 +1,50 @@
+img {
+    width: 200pt;
+    height: auto;
+  }
+  .circular-profile {
+    border-radius: 50%; /* Makes the image circular */
+}
+
+.profile {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+.profile-section {
+    display: flex;
+}
+
+.profile {
+    position: relative;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.about-me {
+    margin-left: 20px;
+    display: none; /* Hide about me section initially */
+}
+
+.about-me.visible {
+    display: block; /* Show about me section when visible class is added */
+}
+
+.about-me p:last-child {
+    margin-bottom: 0; /* Remove bottom margin from last paragraph */
+}
+
+.profile-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border: 2px solid transparent; /* Initially transparent border */
+    border-radius: 50%;
+    pointer-events: none; /* Allow clicks to pass through */
+}
