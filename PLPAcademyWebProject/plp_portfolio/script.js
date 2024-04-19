@@ -1,3 +1,4 @@
+
 const profilePhoto = document.getElementById('profile-photo');
 const aboutMe = document.getElementById('about-me');
 const profileBorder = document.createElement('div');
