@@ -1,4 +1,9 @@
 /* style.css */
+.home {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 body {
     font-family: Arial, sans-serif;
