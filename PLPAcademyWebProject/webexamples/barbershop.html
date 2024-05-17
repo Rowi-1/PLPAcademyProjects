@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rowi Cutz Barbershop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            padding: 20px;
+        }
+        .services, .gallery, .contact {
+            margin: 20px 0;
+        }
+        .services img, .gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-container input[type="text"], .form-container input[type="password"], .form-container input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Rowi Cutz Barbershop</h1>
+    <p>Style that makes you smile</p>
+</header>
+
+<nav>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="#signup">Sign Up</a>
+    <a href="#login">Login</a>
+</nav>
+
+<div class="container" id="about">
+    <h2>About Us</h2>
+    <p>Welcome to Rowi Cutz, where your hair is treated with utmost care and precision. Our professional barbers are here to provide you with a top-notch grooming experience.</p>
+</div>
+
+<div class="container services" id="services">
+    <h2>Our Services</h2>
+    <div>
+        <img src="service1.jpg" alt="Service 1">
+        <img src="service2.jpg" alt="Service 2">
+        <img src="service3.jpg" alt="Service 3">
+    </div>
+    <p>We offer a wide range of services including haircuts, shaves, and styling. Our services are designed to meet your individual needs and preferences.</p>
+</div>
+
+<div class="container gallery" id="gallery">
+    <h2>Gallery</h2>
+    <div>
+        <img src="gallery1.jpg" alt="Gallery 1">
+        <img src="gallery2.jpg" alt="Gallery 2">
+        <img src="gallery3.jpg" alt="Gallery 3">
+    </div>
+</div>
+
+<div class="container contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Address: 123 Barber St, Hairtown</p>
+    <p>Phone: (123) 456-7890</p>
+    <p>Email: contact@rowicutz.com</p>
+</div>
+
+<div class="container form-container" id="signup">
+    <h2>Sign Up</h2>
+    <form>
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Sign Up</button>
+    </form>
+</div>
+
+<div class="container form-container" id="login">
+    <h2>Login</h2>
+    <form>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2024 Rowi Cutz. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
