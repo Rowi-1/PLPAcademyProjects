@@ -1,0 +1,12 @@
+| ProductID |   Category  | QuantitySold |  Revenue  |
+|-----------|-------------|--------------|-----------|
+|     1     | Electronics |     100      |  1500.00  |
+|     2     |  Clothing   |     200      |  2500.50  |
+|     3     |    Books    |     150      |  1800.75  |
+|     4     | Electronics |     120      |  2000.25  |
+|     5     |   Grocery   |     300      |  1200.00  |
+|     6     |  Clothing   |     180      |  3000.00  |
+|     7     |    Books    |      90      |  1500.50  |
+|     8     | Electronics |      80      |  1800.25  |
+|     9     |   Grocery   |     250      |  1500.75  |
+|    10     |  Clothing   |     150      |  2200.50  |
