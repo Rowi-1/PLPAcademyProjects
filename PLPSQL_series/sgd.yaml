@@ -1,0 +1,5 @@
+| OrderID | CustomerName  | OrderDate  | TotalAmount |
+|---------|---------------|------------|-------------|
+| 1       | John Doe      | 2023-05-10 | 150.00      |
+| 2       | Jane Smith    | 2023-05-12 | 200.00      |
+| 3       | Alice Johnson | 2023-05-11 | 100.00      |
